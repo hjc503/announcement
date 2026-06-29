@@ -2,143 +2,153 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="https://wedding.jongchan-com.workers.dev/pic/M3_03055.jpg">
-    <title>결혼식 참석 안내</title>
-    <style>
-        * {
-            box-sizing: border-box
-        }
 
-        body {
-            margin: 0;
-            font-family: Pretendard, -apple-system, sans-serif;
-            background: #e7e1d8;
-            color: #3d3934
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .wrap {
-            max-width: 430px;
-            margin: 0 auto;
-            background: #fbf8f3;
-            min-height: 100vh
-        }
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="현종찬 · 손윤겸 결혼식 참석 안내">
+        <meta property="og:description" content="2026년 7월 5일 일요일 오후 5시 30분 · 롯데호텔 서울 38F 무궁화">
+        <meta property="og:image" content="https://wedding.jongchan-com.workers.dev/pic/M3_03055.jpg">
+        <meta property="og:url" content="https://wedding.jongchan-com.workers.dev/?v=10">
 
-        .hero {
-            position: relative;
-            height: 720px;
-            background-image: url("./pic/M3_03055.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            color: #fff;
-            padding: 0 28px;
-            text-align: center;
+        <meta name="twitter:card" content="summary_large_image">
 
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding-bottom: 500px;
-        }
+        <title>결혼식 참석 안내</title>
+        <style>
+            * {
+                box-sizing: border-box
+            }
 
-        .hero::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to bottom,
-                    rgba(0, 0, 0, .05),
-                    rgba(0, 0, 0, .15),
-                    rgba(0, 0, 0, .6));
-        }
+            body {
+                margin: 0;
+                font-family: Pretendard, -apple-system, sans-serif;
+                background: #e7e1d8;
+                color: #3d3934
+            }
 
-        .hero h1,
-        .hero p {
-            position: relative;
-            z-index: 1;
-        }
+            .wrap {
+                max-width: 430px;
+                margin: 0 auto;
+                background: #fbf8f3;
+                min-height: 100vh
+            }
 
-        .hero h1 {
-            margin: 0 0 12px;
-            font-size: 32px
-        }
+            .hero {
+                position: relative;
+                height: 720px;
+                background-image: url("./pic/M3_03055.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                color: #fff;
+                padding: 0 28px;
+                text-align: center;
 
-        .hero p {
-            margin: 0;
-            line-height: 1.8
-        }
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding-bottom: 500px;
+            }
 
-        section {
-            padding: 48px 24px
-        }
+            .hero::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(to bottom,
+                        rgba(0, 0, 0, .05),
+                        rgba(0, 0, 0, .15),
+                        rgba(0, 0, 0, .6));
+            }
 
-        h2 {
-            text-align: center;
-            margin: 0 0 20px
-        }
+            .hero h1,
+            .hero p {
+                position: relative;
+                z-index: 1;
+            }
 
-        .card {
-            background: #fff;
-            border-radius: 24px;
-            padding: 22px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
-            letter-spacing: 0.05em;
-            line-height: 1.8;
-        }
+            .hero h1 {
+                margin: 0 0 12px;
+                font-size: 32px
+            }
 
-        .open-time {
-            letter-spacing: 0.05em;
-            line-height: 1.8;
-            text-align: center;
-        }
+            .hero p {
+                margin: 0;
+                line-height: 1.8
+            }
 
-        .timeline {
-            display: grid;
-            gap: 0
-        }
+            section {
+                padding: 48px 24px
+            }
 
-        .item {
-            padding: 16px 0;
-            border-bottom: 1px solid #eee;
-            text-align: center;
-            font-size: 16px;
-            line-height: 1.5;
-        }
+            h2 {
+                text-align: center;
+                margin: 0 0 20px
+            }
 
-        .item:last-child {
-            border-bottom: none
-        }
+            .card {
+                background: #fff;
+                border-radius: 24px;
+                padding: 22px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+                letter-spacing: 0.05em;
+                line-height: 1.8;
+            }
 
-        .table {
-            background: #faf8f5;
-            border-radius: 14px;
-            padding: 14px;
-            margin-top: 10px
-        }
+            .open-time {
+                letter-spacing: 0.05em;
+                line-height: 1.8;
+                text-align: center;
+            }
 
-        .btns {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px
-        }
+            .timeline {
+                display: grid;
+                gap: 0
+            }
 
-        .btn {
-            display: block;
-            text-decoration: none;
-            text-align: center;
-            padding: 14px;
-            border-radius: 999px;
-            background: #3d3934;
-            color: #fff
-        }
+            .item {
+                padding: 16px 0;
+                border-bottom: 1px solid #eee;
+                text-align: center;
+                font-size: 16px;
+                line-height: 1.5;
+            }
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #999
-        }
-    </style>
-</head>
+            .item:last-child {
+                border-bottom: none
+            }
+
+            .table {
+                background: #faf8f5;
+                border-radius: 14px;
+                padding: 14px;
+                margin-top: 10px
+            }
+
+            .btns {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px
+            }
+
+            .btn {
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                padding: 14px;
+                border-radius: 999px;
+                background: #3d3934;
+                color: #fff
+            }
+
+            footer {
+                text-align: center;
+                padding: 30px;
+                color: #999
+            }
+        </style>
+    </head>
 
 <body>
     <div class="wrap">
