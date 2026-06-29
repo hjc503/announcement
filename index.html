@@ -25,10 +25,36 @@
         }
 
         .hero {
-            background: #3d3934;
+            position: relative;
+            height: 720px;
+            background-image: url("./pic/M3_03055.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             color: #fff;
-            padding: 70px 28px;
-            text-align: center
+            padding: 0 28px;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 500px;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom,
+                    rgba(0, 0, 0, .05),
+                    rgba(0, 0, 0, .15),
+                    rgba(0, 0, 0, .6));
+        }
+
+        .hero h1,
+        .hero p {
+            position: relative;
+            z-index: 1;
         }
 
         .hero h1 {
@@ -54,7 +80,15 @@
             background: #fff;
             border-radius: 24px;
             padding: 22px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, .08)
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+            letter-spacing: 0.05em;
+            line-height: 1.8;
+        }
+
+        .open-time {
+            letter-spacing: 0.05em;
+            line-height: 1.8;
+            text-align: center;
         }
 
         .timeline {
@@ -120,9 +154,34 @@
 
         <section>
             <h2>예식장 오픈 시간</h2>
-            <div class="card">
-                오후 5시 20분부터 입장 가능합니다.<br>
-                여유 있게 도착하셔서 안내를 받아주세요.
+            <div class="open-time">
+                오후 5시 15분부터 입장 가능합니다.<br>
+                여유 있게 도착하셔서 안내를 받아주세요.<br>
+                예식은 약 2시간 정도 진행 됩니다.
+
+                <br><br>
+
+                문의사항이 있으시면<br>
+
+                아래 연락처로 연락 부탁드립니다.
+
+                <br><br>
+
+                <div class="btns">
+
+                    <a class="btn" href="tel:01034671601">
+
+                        신랑에게 전화
+
+                    </a>
+
+                    <a class="btn" href="tel:01045306345">
+
+                        신부에게 전화
+
+                    </a>
+
+                </div>
             </div>
         </section>
 
@@ -143,16 +202,47 @@
         </section>
 
         <section>
-            <h2>주차 안내</h2>
+            <h2>무궁화 이용 안내</h2>
 
             <div class="card">
+
+                알레르기 등의 음식관련 민감 <br>
+                또는 특별한 식이조절이 있으시면 <br>
+                사전에 알려주시기 바랍니다.<br>
+                <br>
+                직통전화 (02)-317-7061~2
+                <br>
+
+            </div>
+
+        </section>
+
+        <section>
+            <h2>오시는 길</h2>
+
+            <div class="card">
+                <br>
                 서울특별시 중구 을지로 30<br>
-                롯데호텔 서울 38F 무궁화
+                롯데호텔 서울 38F 무궁화<br>
+                <br>
+
+                로비 도착 시 좌측의 <strong>무궁화 전용 엘리베이터</strong>를 <br>
+                이용하시면 보다 편안히 오실 수 있습니다.
+
+
+
+
 
                 <br><br>
 
                 호텔 주차장 이용 가능<br>
-                예식 참석객 무료 주차 등록
+                예식 참석객 무료 주차 등록 (4시간) <br>
+
+                발렛파킹: 1층 현관 입구에서 가능합니다. <br>
+                (요금:30,000원) <br>
+                <br>
+
+                직통전화 (02)-317-7061~2
 
                 <br><br>
 
@@ -171,8 +261,12 @@
         <section>
             <h2>테이블 위치</h2>
             <div class="card">
-                예식 당일 입구에서<br>
-                좌석 및 테이블 위치를 안내해드립니다.
+                하객 테이블에는 참석자 성함이 기재된 <br>
+                이름표가 테이블 위에 준비되어 있습니다.<br>
+                <br>
+                입장 후 성함을 확인하시어 <br>
+                해당 좌석에 착석해 주시면 감사하겠습니다.
+
             </div>
         </section>
 
